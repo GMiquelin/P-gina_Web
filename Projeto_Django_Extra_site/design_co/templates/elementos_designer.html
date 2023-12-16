@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>Desing de Interiores</h1>
+    </header>
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+            <li><a href="{% url 'index' %}">Início</a></li>
+            <li><a href="{% url 'elementos_designer' %}">Elementos Desing</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="{% url 'contatos' %}">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://edc.h-cdn.co/assets/16/11/3200x1800/hd-aspect-1458329812-gilbartolome-house-on-the-cliff-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thearchitecturedesigns.com/wp-content/uploads/2020/03/Modern-Mountain-Home-in-Truckee-California-10-759x500.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.jamesedition.com/stories/wp-content/uploads/2022/03/mansions_main_fin.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+
+        <section class="container">
+            <div class="card">
+                <a href="#"><img src="https://amalficonstrucoes.com.br/uploads/imagens/800x600_costa-amalfitana-um-paraiso-na-italia-69-9181.png" alt="Costa Amalfitana"></a>
+                <div class="card-text">
+                    <h2>Costa Amalfitana</h2>
+                    <p>Designs inspirados no paraíso italiano</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="https://content.r9cdn.net/rimg/dimg/f2/b1/89e06bf7-city-34713-16ed2f2c7f1.jpg?width=1366&height=768&xhint=1735&yhint=2084&crop=true" alt="Cancún"></a>
+                <div class="card-text">
+                    <h2>Cancún</h2>
+                    <p>Casas perfeitas para quem ama Cancún</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="https://gallasdisperati.com.br/wp-content/uploads/2022/09/oslo-1040x675.jpg" alt="Oslo"></a>
+                <div class="card-text">
+                    <h2>Oslo</h2>
+                    <p>Designs perfeitos para quem ama o estilo nórdico</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="https://content.r9cdn.net/rimg/dimg/07/ea/d499d02c-city-31915-16484a53851.jpg?width=1366&height=768&xhint=1256&yhint=1053&crop=true" alt="South Lake City"></a>
+                <div class="card-text">
+                    <h2>South Lake City</h2>
+                    <p>Todo o charme da capital do estado de Utah - EUA</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="https://f.i.uol.com.br/folha/turismo/images/14189264.jpeg" alt="Fiordes Noruegueses"></a>
+                <div class="card-text">
+                    <h2>Fiordes Noruegueses</h2>
+                    <p>Designs inspirados nas residências presentes entre as gigantes montanhas norueguesas</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="https://tourscanner.com/blog/wp-content/uploads/2022/01/fun-things-to-do-in-New-York-City-at-night.jpg" alt="Nova York"></a>
+                <div class="card-text">
+                    <h2>Nova York</h2>
+                    <p>Casas inspiradas na corrida Nova York</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 Desing de Interiores</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("show")
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
